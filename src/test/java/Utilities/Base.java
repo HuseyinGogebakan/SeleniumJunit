@@ -25,8 +25,11 @@ public abstract class Base {
        // options.setBinary(new File("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"));
 
         // For use with ChromeDriver:
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("disable-popup-blocking");
+        driver = new ChromeDriver(options);
         actions = new Actions(driver);
+
         driver.manage().window().maximize();
     }
 }
