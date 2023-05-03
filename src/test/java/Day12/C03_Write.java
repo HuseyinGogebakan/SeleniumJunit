@@ -20,15 +20,16 @@ public class C03_Write {
         Sheet sht = wb.createSheet("TestAutomation");
 
         Row row = sht.createRow(0);
-        Cell cell01 = row.createCell(0);
-        Cell cell02 = row.createCell(1);
+        row.createCell(0).setCellValue("Name");
+        row.createCell(1).setCellValue("Price");;
+        row.createCell(2).setCellValue("location");
 
-        cell01.setCellValue("Name");
-        cell02.setCellValue("Price");
+
+
         FileOutputStream fos = new FileOutputStream(path);
         wb.write(fos);
-        fis.close();
-        fos.close();
-        wb.close();
+//        fis.close();
+//        fos.close();
+//        wb.close();
     }
 }

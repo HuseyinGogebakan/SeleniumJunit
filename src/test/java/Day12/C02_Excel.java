@@ -36,9 +36,8 @@ public class C02_Excel  {
 
         }
         System.out.println(data);
-        wb.close();
-        fis.close();
-        // if you dont know the  coloumns inner for loop needed
+
+        // if you don't know the  columns inner for loop needed
         int rowlast = sheet1.getLastRowNum();
         int coloumn = sheet1.getRow(0).getLastCellNum();
 

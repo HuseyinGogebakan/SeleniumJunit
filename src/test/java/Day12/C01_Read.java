@@ -25,9 +25,9 @@ public class C01_Read extends Base {
 
         Sheet sh1 = wb.getSheetAt(0);
 
-        Row row1 = sh1.getRow(3);// starts form 0
+        Row row1 = sh1.getRow(3);// starts from 0
 
-        Cell cell4_6 = row1.getCell(5); // starts form 0
+        Cell cell4_6 = row1.getCell(5); // starts from 0
 
         String str01 = cell4_6.toString();
         System.out.println("str01 = " + str01);
